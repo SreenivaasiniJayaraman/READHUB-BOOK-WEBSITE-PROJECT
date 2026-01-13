@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>READHUB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+       <h1>READHUB</h1>
+    </div>
+
+    <div class="container">
+
+    <div class="book-container">
+        <h2>Tales Beneath the Moon</h2>
+        <h5>Clara Silverwood</h5>
+        <p>
+            Tales Beneath the Moon by Clara Silverwood is a gentle collection of interconnected stories set in a quiet village where moonlight reveals secrets hidden during the day. Each night, as the moon rises, ordinary lives are touched by small moments of magic—whispered wishes, forgotten memories, and unexpected acts of kindness that slowly change the hearts of those who experience them.
+        </p>
+        <button onclick="deletebook(event)">Delete</button>
+    </div>
+
+    <div class="book-container">
+        <h2>Chronicles of the Hidden Realm</h2>
+        <h5>Elias Moonforge</h5>
+        <p>
+            Chronicles of the Hidden Realm by Elias Moonforge is a sweeping fantasy tale that follows the discovery of a secret world existing alongside the ordinary one, bound by ancient magic and long-forgotten oaths. As hidden kingdoms awaken and old powers stir, unlikely heroes are drawn into a struggle between light and shadow that will decide the fate of both realms.
+        </p>
+        <button onclick="deletebook(event)">Delete</button>
+    </div>
+
+</div>
+
+    
+
+
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+         <h2>Add book</h2>
+         <form>
+            <input type="text"placeholder="Book Title" id="book-title-input">
+            <input type="text" placeholder="Book Author" id="book-author-input">
+            <textarea placeholder="Short description" id="book-description-input"></textarea>
+            <button id="add-book">ADD</button>
+            <button id="cancel-popup">CANCEL</button>
+         </form>
+    </div>
+    <button class="add-button" id="add-popup-button">+</button>
+    <script src="script.js"></script>
+</body>
+</html>
